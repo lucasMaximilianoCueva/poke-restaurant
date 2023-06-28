@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page-wrapper">
-      <h1 className="primary-heading">Tienes alguna consulta?</h1>
+      <h1 className="primary-heading" id='contacto'>Tienes alguna consulta?</h1>
       <h1 className="primary-heading">Dejanos ayudarte</h1>
       <div className="contact-form-container">
         {/* <input type="text" placeholder="yourmail@gmail.com" />

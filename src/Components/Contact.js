@@ -25,7 +25,8 @@ const Contact = () => {
         {/* <input type="text" placeholder="yourmail@gmail.com" />
         <button className="secondary-button">Submit</button> */}
 
-        <form ref={form} onSubmit={sendEmail}>
+        {/* <form ref={form} onSubmit={sendEmail}> */}
+        <form name="contact" method="POST" data-netlify="true">
           {/* Nombre del cliente */}
           <input type="text" placeholder='Tu nombre' name="to_name" />
           <input type="email" placeholder='Tu email' name="email" /> 

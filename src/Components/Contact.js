@@ -1,12 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 // import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
     // emailjs.sendForm('service_v2r5csi', 'template_amcm8qn', form.current, 'xvm8A8R58Vbb7M2WP')
     // // serviceId: service_v2r5csi templateId: template_amcm8qn publicKey: xvm8A8R58Vbb7M2WP
@@ -15,7 +15,7 @@ const Contact = () => {
     //   }, (error) => {
     //       console.log(error.text);
     //   });
-  };
+  // };
 
   return (
     <div className="contact-page-wrapper">

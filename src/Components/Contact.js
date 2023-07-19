@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable no-lone-blocks */
+import React, { useRef } from 'react';
 
 // import emailjs from '@emailjs/browser';
 
@@ -24,18 +25,28 @@ const Contact = () => {
       <div className="contact-form-container">
         {/* <input type="text" placeholder="yourmail@gmail.com" />
         <button className="secondary-button">Submit</button> */}
-
-        {/* <form ref={form} onSubmit={sendEmail}> */}
-        <form name="contact" method="POST" data-netlify="true">
-          {/* Nombre del cliente */}
-          <input type="text" placeholder='Tu nombre' name="to_name" />
-          <input type="email" placeholder='Tu email' name="email" /> 
-          {/* Email del cliente, aqui se le reenviara la consulta */}
-          {/* Consulta del cliente */}
-          <textarea name="message" placeholder='Mensaje' />
-          {/* <input className="secondary-button" type="submit" value="Enviar" /> */}
-          <button className="secondary-button" type="submit">Enviar</button>
+        <form method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
+
       </div>
     </div>
   );
@@ -73,3 +84,14 @@ export default Contact;
 //     </form>
 //   );
 // };
+
+
+{/* <form ref={form} onSubmit={sendEmail}> */ }
+{/* Nombre del cliente */ }
+{/* <input type="text" placeholder='Tu nombre' name="to_name" /> */ }
+{/* <input type="email" placeholder='Tu email' name="email" />  */ }
+{/* Email del cliente, aqui se le reenviara la consulta */ }
+{/* Consulta del cliente */ }
+{/* <textarea name="message" placeholder='Mensaje' /> */ }
+{/* <input className="secondary-button" type="submit" value="Enviar" /> */ }
+// </form>

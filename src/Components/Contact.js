@@ -33,7 +33,8 @@ const Contact = () => {
           {/* Email del cliente, aqui se le reenviara la consulta */}
           {/* Consulta del cliente */}
           <textarea name="message" placeholder='Mensaje' />
-          <input className="secondary-button" type="submit" value="Enviar" />
+          {/* <input className="secondary-button" type="submit" value="Enviar" /> */}
+          <button className="secondary-button" type="submit">Enviar</button>
         </form>
       </div>
     </div>
